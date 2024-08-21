@@ -12,7 +12,7 @@ void Init_Key_GPIO(void)
     rcu_periph_clock_enable(RCU_GPIOB);
     
     //设置输出模式，上拉
-    gpio_mode_set(GPIOB, GPIO_MODE_INPUT, GPIO_PUPD_PULLUP, GPIO_PIN_13|GPIO_PIN_14|GPIO_PIN_15);
+    gpio_mode_set(GPIOB, GPIO_MODE_INPUT, GPIO_PUPD_PULLUP, GPIO_PIN_13|GPIO_PIN_14|GPIO_PIN_15);// @NOTE 
 }
 
 /*

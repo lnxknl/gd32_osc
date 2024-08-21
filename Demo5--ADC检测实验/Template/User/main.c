@@ -41,7 +41,7 @@ int main(void)
 	{
        for(i=0;i<1;i++)
        {
-            adcData[i]=(Get_ADC_Value(ADC_CHANNEL_3)*3.3f)/4096.0f; 
+            adcData[i]=(Get_ADC_Value(ADC_CHANNEL_3)*3.3f)/4096.0f; // @NOTE 
             delay_1us(20);                              //这里的延时不能太长，否则采集数据失真，太短数据量太大
        }
        for(i=0;i<1;i++)

@@ -6,7 +6,7 @@
 *	函数参数：无
 *	返回值：	无
 */
-void Init_PWM_Output(uint32_t period,uint32_t pulse)
+void Init_PWM_Output(uint32_t period,uint32_t pulse)// @NOTE 
 {
 	//定时器输出参数结构体
 	timer_oc_parameter_struct timer_ocinitpara;

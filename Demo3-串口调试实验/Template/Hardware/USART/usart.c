@@ -58,7 +58,7 @@ void Init_USART(uint32_t bound)
 *   函数参数：无
 *   返回值：  无
 */
-void Init_USART0RecDMA(void)
+void Init_USART0RecDMA(void)// @NOTE 
 {
     //DMA参数结构体
     dma_parameter_struct dma_init_struct;
@@ -80,7 +80,7 @@ void Init_USART0RecDMA(void)
     dma_init_struct.periph_inc = DMA_PERIPH_INCREASE_DISABLE;   //外设地址不自增
     dma_init_struct.periph_width = DMA_PERIPHERAL_WIDTH_8BIT;   //外设地址宽度
     dma_init_struct.priority = DMA_PRIORITY_ULTRA_HIGH;         //中断优先级高
-    dma_init(DMA_CH2, &dma_init_struct);                        //初始化DMA通道2
+    dma_init(DMA_CH2, &dma_init_struct);                        //初始化DMA通道2// @NOTE 
     
     //DAM循环模式失能
     dma_circulation_disable(DMA_CH2);

@@ -38,7 +38,7 @@ int main(void)
     uint16_t Trigger_number=0;
     
     //初始化示波器参数
-    Init_Oscilloscope(&oscilloscope);
+    Init_Oscilloscope(&oscilloscope);// @NOTE 
     
     //时钟初始化
     systick_config();

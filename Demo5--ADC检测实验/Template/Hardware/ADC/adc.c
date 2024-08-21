@@ -8,7 +8,7 @@
  * 作       者：LC
  * 备       注：
 **********************************************************/
-void ADC_Config(void)
+void ADC_Config(void)// @NOTE 
 {
     //使能引脚时钟
     rcu_periph_clock_enable(RCU_GPIOA);      

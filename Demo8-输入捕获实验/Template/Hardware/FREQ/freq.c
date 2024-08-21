@@ -5,7 +5,7 @@
 *   函数参数：无
 *   返回值：  无
 */
-void Init_FreqTimer(void)
+void Init_FreqTimer(void)// @NOTE 
 {
     //定时器通道输入参数结构体
     timer_ic_parameter_struct timer_icinitpara;
@@ -69,7 +69,7 @@ static __IO uint16_t ccnumber = 0;
 static __IO uint32_t count = 0;
 static __IO float freq=0;
 
-void TIMER2_IRQHandler(void)
+void TIMER2_IRQHandler(void)// @NOTE 
 {
   if(SET == timer_interrupt_flag_get(TIMER2, TIMER_INT_FLAG_CH0))
   {

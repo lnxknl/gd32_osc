@@ -1,7 +1,7 @@
 #include "gd32e23x.h"
 #include "systick.h"
 #include <stdio.h>
-#include "led.h"
+#include "led.h"// @NOTE 
 #include "main.h"
 
 
@@ -16,7 +16,7 @@ int main(void)
 	while(1)
 	{
         //´ò¿ªLED2¡¢LED3
-        Open_LED(led2);Open_LED(led3);
+        Open_LED(led2);Open_LED(led3);// @NOTE 
         
         //ÑÓÊ±500ms
         delay_1ms(500);

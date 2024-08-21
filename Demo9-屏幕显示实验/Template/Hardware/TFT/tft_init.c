@@ -12,7 +12,7 @@
 *   函数参数：无
 *   返回值：无
 */
-void Init_SPI0_GPIO(void)
+void Init_SPI0_GPIO(void)// @NOTE 
 {
     //spi结构体参数
     spi_parameter_struct spi_init_struct;

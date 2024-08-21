@@ -34,7 +34,7 @@ void Init_EC11_EXITGPIO(void)
 	nvic_irq_enable(EXTI4_15_IRQn,1U);
 	
 	//配置中断线
-	syscfg_exti_line_config(EXTI_SOURCE_GPIOB,EXTI_SOURCE_PIN4);
+	syscfg_exti_line_config(EXTI_SOURCE_GPIOB,EXTI_SOURCE_PIN4);// @NOTE 
 	
 	//初始化中断线，设置为中断模式，上升沿和下降沿触发
 	exti_init(EXTI_4,EXTI_INTERRUPT,EXTI_TRIG_BOTH);
@@ -53,7 +53,7 @@ uint8_t B_value=0;
 *   函数参数：无
 *   返回值：  无
 */
-void EXTI4_15_IRQHandler(void)
+void EXTI4_15_IRQHandler(void)// @NOTE 
 {
    if(RESET != exti_interrupt_flag_get(EXTI_4))  
    {

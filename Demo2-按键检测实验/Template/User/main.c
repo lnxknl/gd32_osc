@@ -20,7 +20,7 @@ int main(void)
 	while(1)
 	{
       //按键扫描
-      keyValue=Scanf_Key_GPIO();
+      keyValue=Scanf_Key_GPIO();// @NOTE 
       
       //按键处理
       Key_Handle(keyValue);

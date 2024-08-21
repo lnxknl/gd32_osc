@@ -20,7 +20,7 @@ int main(void)
     Init_Key_GPIO();
     
     //³õÊ¼»¯´®¿Ú
-    Init_USART(115200);
+    Init_USART(115200);// @NOTE 
     Init_USART0RecDMA();
     USART0_SendData("Hello World\r\n");
   

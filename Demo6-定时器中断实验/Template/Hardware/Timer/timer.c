@@ -6,7 +6,7 @@
 *   函数参数：无
 *   返回值：  无
 */
-void Init_GeneralTimer(uint32_t period)
+void Init_GeneralTimer(uint32_t period)// @NOTE 
 {   
     //使能时钟
     rcu_periph_clock_enable(RCU_TIMER15);
@@ -46,7 +46,7 @@ void Init_GeneralTimer(uint32_t period)
     timer_enable(TIMER15);
 }
 
-void TIMER15_IRQHandler(void)
+void TIMER15_IRQHandler(void)// @NOTE 
 {
     static uint8_t num=0;
     if(timer_interrupt_flag_get(TIMER15,TIMER_INT_FLAG_UP) == SET)    
